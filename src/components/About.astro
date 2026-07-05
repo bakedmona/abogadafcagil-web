@@ -1,0 +1,52 @@
+<section class="about" id="sobre-mi">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Sobre mí</span>
+      <h2>Ejercicio del derecho con orientación práctica.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Ejerzo como abogada en la Región de la Araucanía, con representación de clientes en distintas jurisdicciones del país. Mi trabajo se concentra en dos áreas: el derecho laboral y el derecho ambiental.</p>
+        <p>En materia laboral, acompaño a trabajadoras y trabajadores en casos de despido injustificado, declaración de relación laboral y cobro de prestaciones adeudadas, incluyendo situaciones frente a empleadores públicos y privados.</p>
+        <p>En materia ambiental, asesoro a personas y comunidades en asuntos vinculados a la afectación de su entorno, con especial atención a la realidad territorial de la Araucanía.</p>
+      </div>
+      <div class="portrait">
+        <div class="frame-corner fc-tl"></div>
+        <div class="frame-corner fc-br"></div>
+        <div class="portrait-label">Fotografía profesional<span>próximamente</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about{background:var(--parchment);}
+  .about-grid{
+    display:grid; grid-template-columns: 1.15fr 0.85fr; gap:72px; align-items:start;
+  }
+  .about-text p{color:var(--stone); font-size:18px; margin:0 0 20px;}
+  .about-text p:last-child{margin-bottom:0;}
+  .portrait{
+    aspect-ratio: 4/5;
+    background:var(--pine);
+    border:1px solid var(--brass);
+    position:relative;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--parchment-2);
+  }
+  .portrait .frame-corner{
+    position:absolute; width:14px; height:14px; border:1px solid var(--brass-light);
+  }
+  .portrait .fc-tl{top:-1px; left:-1px; border-right:none; border-bottom:none;}
+  .portrait .fc-br{bottom:-1px; right:-1px; border-left:none; border-top:none;}
+  .portrait-label{
+    font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--brass-light); text-align:center; padding:0 24px;
+  }
+  .portrait-label span{display:block; margin-top:8px; color:rgba(243,238,227,0.55); font-size:11px; letter-spacing:0.06em;}
+
+  @media (max-width: 860px){
+    .about-grid{grid-template-columns:1fr; gap:40px;}
+    .portrait{order:-1; max-width:280px;}
+  }
+</style>

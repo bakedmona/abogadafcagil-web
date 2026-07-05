@@ -1,0 +1,41 @@
+<header>
+  <div class="nav">
+    <div class="brand">Francisca Gil <span class="dot">·</span> Abogada</div>
+    <nav class="links" aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#areas">Áreas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(24,31,26,0.94);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 32px; max-width:var(--max); margin:0 auto;
+  }
+  .brand{
+    font-family:'Fraunces', serif; font-size:20px; font-weight:600;
+    color:var(--parchment); letter-spacing:0.01em;
+  }
+  .brand .dot{color:var(--brass);}
+  nav.links{display:flex; gap:36px; list-style:none; margin:0; padding:0;}
+  nav.links a{
+    color:var(--parchment-2); text-decoration:none;
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px;
+    letter-spacing:0.08em; text-transform:uppercase;
+    padding-bottom:4px; border-bottom:1px solid transparent;
+    transition:border-color .2s ease, color .2s ease;
+  }
+  nav.links a:hover{color:var(--brass-light); border-color:var(--brass-light);}
+
+  @media (max-width: 860px){
+    nav.links{display:none;}
+  }
+</style>

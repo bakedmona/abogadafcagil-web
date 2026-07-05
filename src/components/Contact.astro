@@ -1,0 +1,52 @@
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Contacto</span>
+      <h2>Conversemos sobre tu caso.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <p>Escríbeme por correo o WhatsApp contándome brevemente tu situación. Atiendo consultas de la Región de la Araucanía y de todo Chile.</p>
+      </div>
+      <div class="contact-list">
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <a href="mailto:frgil.j@gmail.com">frgil.j@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">WhatsApp</span>
+          <a href="https://wa.me/56978986823" target="_blank" rel="noopener">+56 9 7898 6823</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Zona</span>
+          <span class="static-value">Araucanía · Chile</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact{background:var(--parchment);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start;}
+  .contact-text p{color:var(--stone); font-size:18px;}
+  .contact-list{margin-top:8px;}
+  .contact-item{
+    display:flex; align-items:baseline; gap:18px;
+    padding:22px 0; border-top:1px solid rgba(24,31,26,0.12);
+  }
+  .contact-item:last-child{border-bottom:1px solid rgba(24,31,26,0.12);}
+  .contact-item .label{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--brass); width:110px; flex-shrink:0;
+  }
+  .contact-item a, .contact-item .static-value{
+    font-family:'Fraunces', serif; font-size:20px; text-decoration:none; color:var(--ink);
+    border-bottom:1px solid transparent;
+  }
+  .contact-item a:hover{border-color:var(--brass);}
+
+  @media (max-width: 860px){
+    .contact-grid{grid-template-columns:1fr; gap:40px;}
+  }
+</style>

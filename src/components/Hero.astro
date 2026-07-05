@@ -1,0 +1,65 @@
+<section class="hero">
+  <svg class="contour" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-50,420 C150,380 250,460 420,410 C600,355 700,430 900,390 C1050,360 1150,410 1260,380" stroke="#ab8347" stroke-width="1" fill="none"/>
+    <path d="M-50,450 C170,410 260,480 440,440 C610,395 720,460 910,420 C1060,395 1160,435 1260,410" stroke="#ab8347" stroke-width="1" fill="none"/>
+    <path d="M-50,480 C190,445 280,500 460,470 C630,435 740,490 920,455 C1070,430 1170,465 1260,445" stroke="#ab8347" stroke-width="1" fill="none"/>
+    <path d="M-50,60 C120,20 240,80 380,40 C540,-5 660,55 820,30 C960,10 1080,45 1260,25" stroke="#ab8347" stroke-width="1" fill="none"/>
+    <path d="M-50,95 C130,55 250,110 400,72 C560,32 680,88 840,60 C980,42 1100,78 1260,58" stroke="#ab8347" stroke-width="1" fill="none"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Estudio jurídico · Región de la Araucanía</span>
+    <h1>Francisca Gil<br /><em>Abogada</em></h1>
+    <p class="role">Derecho Laboral y Derecho Ambiental, con foco en la defensa de personas frente a instituciones y organizaciones de mayor tamaño.</p>
+    <p class="locale">Araucanía · Chile</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://wa.me/56978986823" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn-ghost" href="#contacto">Ver contacto</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero{
+    position:relative;
+    background:var(--ink);
+    color:var(--parchment);
+    overflow:hidden;
+    padding:120px 0 100px;
+  }
+  .contour{
+    position:absolute; inset:0; z-index:0; opacity:0.35;
+    pointer-events:none;
+  }
+  .hero-inner{position:relative; z-index:1;}
+  .hero .eyebrow{margin-bottom:22px; display:block;}
+  .hero h1{
+    font-size:clamp(42px, 6vw, 74px);
+    line-height:1.02;
+    color:var(--parchment);
+  }
+  .hero h1 em{
+    font-style:italic; font-weight:400; color:var(--brass-light);
+  }
+  .hero .role{
+    margin-top:22px;
+    font-family:'Fraunces', serif; font-style:italic; font-weight:400;
+    font-size:clamp(19px,2.4vw,25px);
+    color:var(--parchment-2);
+    max-width:640px;
+  }
+  .hero .locale{
+    margin-top:34px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px; letter-spacing:0.06em;
+    color:var(--brass-light);
+    display:flex; align-items:center; gap:10px;
+  }
+  .hero .locale::before{
+    content:""; width:22px; height:1px; background:var(--brass-light); display:inline-block;
+  }
+  .hero-cta{margin-top:44px; display:flex; gap:16px; flex-wrap:wrap;}
+
+  @media (max-width: 860px){
+    .hero{padding:96px 0 72px;}
+  }
+</style>

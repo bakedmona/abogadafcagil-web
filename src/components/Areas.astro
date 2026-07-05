@@ -1,0 +1,60 @@
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Áreas de práctica</span>
+      <h2>Dos frentes, un mismo criterio: defender a la parte más expuesta.</h2>
+    </div>
+  </div>
+  <div class="wrap cards-wrap">
+    <div class="cards">
+      <div class="card">
+        <span class="code">Código del Trabajo</span>
+        <h3>Derecho Laboral</h3>
+        <p>Representación de trabajadoras y trabajadores en conflictos con su empleador, en sede judicial y extrajudicial.</p>
+        <ul>
+          <li>Despido injustificado y nulidad del despido</li>
+          <li>Declaración de relación laboral (honorarios encubiertos)</li>
+          <li>Cobro de prestaciones e indemnizaciones</li>
+          <li>Vulneración de derechos fundamentales en el trabajo</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="code">Normativa Ambiental</span>
+        <h3>Derecho Ambiental</h3>
+        <p>Asesoría a personas y comunidades frente a proyectos y actividades con impacto en su entorno.</p>
+        <ul>
+          <li>Afectación ambiental a personas y comunidades</li>
+          <li>Participación en procesos de evaluación ambiental</li>
+          <li>Reclamaciones ante autoridad ambiental</li>
+          <li>Asesoría territorial en la Región de la Araucanía</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .areas{background:var(--pine); color:var(--parchment);}
+  .areas .section-head h2{color:var(--parchment);}
+  .cards-wrap{padding:0 32px;}
+  .cards{display:grid; grid-template-columns:1fr 1fr; gap:2px; background:rgba(243,238,227,0.14);}
+  .card{
+    background:var(--pine); padding:44px 40px;
+  }
+  .card .code{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.1em;
+    color:var(--brass-light); text-transform:uppercase; margin-bottom:20px; display:block;
+  }
+  .card h3{font-size:26px; color:var(--parchment); margin-bottom:16px;}
+  .card p{color:rgba(243,238,227,0.72); font-size:16px; margin:0 0 22px;}
+  .card ul{margin:0; padding:0; list-style:none;}
+  .card li{
+    font-size:15px; color:rgba(243,238,227,0.85);
+    padding:10px 0; border-top:1px solid rgba(243,238,227,0.14);
+  }
+  .card li:first-child{border-top:none;}
+
+  @media (max-width: 860px){
+    .cards{grid-template-columns:1fr;}
+  }
+</style>
